@@ -1,0 +1,288 @@
+html {
+  height: 100%;
+}
+body {
+  background: #eff4f5;
+  min-height: 100%;
+}
+#indexTab a{
+  color: black;
+}
+#tab_nav {
+  width: 100%;
+  position: fixed;
+  height: 1.23rem;
+  line-height: 1.17rem;
+  background: white;
+  border-top: 1px solid #d8d8d8;
+  text-align: center;
+  bottom: 0;
+  font-size: 0
+}
+#tab_nav a::before {
+  content: '';
+  width: .45rem;
+  height: .45rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.1rem;
+}
+#tab_nav a {
+    display: inline-block;
+    width: .86rem;
+    padding: .12rem .67rem 0 .67rem;
+    line-height: normal;
+    font-size: .37rem;
+    color: #989898;
+    margin: 0 0.8rem;
+    text-decoration: none;
+}
+#tab_nav a.active {
+  color: #ee6d0a;
+}
+#tab_nav a:nth-of-type(1)::before {
+  background: url('/image/index_nor.png') no-repeat center;
+  background-size: cover;
+}
+#tab_nav a:nth-of-type(2)::before {
+  background: url('/image/mine_nor.png') no-repeat center;
+  background-size: cover;
+}
+#tab_nav a.active:nth-of-type(1)::before {
+  background: url('/image/index_on.png') no-repeat center;
+  background-size: cover;
+}
+#tab_nav a.active:nth-of-type(2)::before {
+  background: url('/image/mine_on.png') no-repeat center;
+  background-size: cover;
+}
+
+/* 首页tab页css */
+#banner {
+  width: 100%;
+  height: 5rem;
+  background: url(/image/banner.jpeg) no-repeat center;
+  background-size: cover;
+}
+#tags {
+  width: 100%;
+  height: 2.82rem;
+  text-align: center;
+  line-height: 2.27rem;
+  font-size: 0;
+  padding-top: .51rem;
+  border-bottom: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  background: white;
+}
+#tags .tags_item::before {
+  content: '';
+  margin: auto;
+  width: 1.15rem;
+  height: 1.15rem;
+  display: block;
+  line-height: normal;
+  margin-bottom: .4rem;
+}
+#dailishang::before{
+  background: url(/image/fuwushang.png) no-repeat center;
+  background-size: cover;
+}
+#tuiguang::before {
+  background: url(/image/zhuanqian.png) no-repeat center;
+  background-size: cover;
+}
+#tags .tags_item {
+  display: inline-block;
+  list-style: none;
+  font-size: .37rem;
+  line-height: normal;
+  margin: 0 1.4rem;
+}
+#courses {
+  padding: 0 .4rem;
+  padding-bottom: 2rem;
+  background: white;
+  border-top: 1px solid #f2f2f2;
+}
+#courses_header {
+  height: 1.67rem;
+  font-size: .45rem;
+  line-height: 1.67rem;
+}
+#courses_header span {
+  color: #939393;
+  float: right;
+  font-size: .37rem;
+}
+#courses_list {
+  font-size: 0;
+  margin: 0 -.2rem;
+}
+.courses_list_item {
+  list-style: none;
+  display: inline-block;
+  margin:.2rem;
+  width: 4.4rem;
+  font-size: .43rem;
+}
+.courses_list_item_img {
+  height: 2.76rem;
+  border: 1px solid #f2f2f2;
+
+}
+.courses_list_item_img img{
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+}
+.courses_list_item_title {
+  white-space: pre-line;
+  height: 1.2rem;
+  overflow: hidden;
+  margin: .13rem 0;
+  line-height: 1.5;
+}
+.courses_list_item_price {
+  color: #ee6d0a;
+  font-size: .41rem;
+}
+.courses_list_item_price span {
+  font-size: .27rem;
+  margin-right: .07rem;
+}
+.courses_list_item_price_num {
+  font-size: .37rem !important;
+}
+.courses_list_item_buyer {
+  font-size: .35rem;
+  color: #909090;
+  float: right;
+}
+
+
+
+
+
+/* 我的tab页css */
+#mineTab {
+  position: relative;
+}
+#blueback {
+  width: 100%;
+  height: 4.63rem;
+  background: #5cadef;
+  position: relative;
+  z-index: 1;
+}
+#mine_user_info {
+  width: 9.2rem;
+  padding: .47rem 0;
+  background: white;
+  border-radius: .2rem;
+  z-index: 2;
+  margin: auto;
+  margin-top: .8rem;
+  position: relative;
+}
+#mine_user_nav {
+  text-align: center;
+}
+.mine_user_info_img {
+  width: 2.47rem;
+  height: 2.47rem;
+  border-radius: 1.23rem;
+  margin: auto;
+  overflow: hidden;
+}
+.mine_user_info_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mine_user_info_user {
+  text-align: center;
+  font-size: .43rem;
+  margin: .36rem 0;
+}
+.mine_user_info_userid {
+  text-align: center;
+  font-size: .37rem;
+  color: #84aac7;
+}
+.mine_user_info_userid .user_type {
+  margin-right: .11rem;
+}
+.mine_nav_item {
+  padding: 0 1rem;
+  font-size: .37rem;
+  text-align: center;
+  display: inline-block;
+}
+.mine_nav_item::before {
+  content: '';
+  display: block;
+  width: .57rem;
+  height: .57rem;
+  margin: auto;
+  margin-bottom:.27rem;
+
+}
+#order_link::before {
+  background:url(/image/order.png) no-repeat center;
+  background-size: cover;
+}
+#watch_record_link::before {
+  background:url(/image/watch_record.png) no-repeat center;
+  background-size: cover;
+}
+#agent_link::before {
+  background:url(/image/fuwushang2.png) no-repeat center;
+  background-size: cover;
+}
+.mine_my_project {
+  margin-top: .47rem;
+  background: white;
+  border-radius: .2rem;
+  overflow: hidden;
+}
+#mine_my_project_content {
+  font-size: 0;
+  padding: .53rem;
+  margin: 0 -1.2rem;
+  text-align: center;
+}
+#mine_my_project_content a {
+  color: black;
+}
+.mine_income {
+  width: 3.33rem;
+  display: inline-block;
+  text-align: center;
+}
+#mine_my_project_header {
+  padding: .4rem;
+  font-size: .4rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+#mine_my_project_header span {
+  float: right;
+  color: #585858;
+  font-size: .37rem;
+}
+.mine_income_wenzi {
+  font-size: .37rem;
+}
+.mine_income div:nth-of-type(1) {
+  font-size: .57rem;
+  color: #629ac6;
+  margin-bottom: .44rem;
+}
+#content_block {
+  width: 9.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

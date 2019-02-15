@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- 各浏览器配置 -->
+    <meta content="telephone=no,email=no" name="format-detection">
+
+    <!-- safari -->
+    <!-- 去掉地址栏和toolbar -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- uc -->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="nightmode" content="disable">
+
+    <!-- QQ -->
+    <meta name="x5-orientation" content="portrait">
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/pages/agent/css/agent.css">
+    <link href="https://cdn.bootcss.com/framework7/1.6.5/css/framework7.ios.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/framework7/1.6.5/css/framework7.ios.colors.min.css" rel="stylesheet">
+
+    <!-- 移动端适配js -->
+    <script src="/js/flexible.js"></script>
+    <!-- 微信sdk -->
+    <script type="text/javascript" src="/js/jweixin-1.2.0.js"></script>
+    <!-- zepto 轻量的jq-->
+    <!-- <script type="text/javascript" src="/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/js/zepto.touch.js"></script> -->
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <title>服务商</title>
+  </head>
+  <body>
+    <nav id="tab_nav">
+      <a href="javascript:;" class='registerHandler' handler='toBack'><</a>
+      <a href="javascript:;" class='registerHandler' handler='guanZhu'>关注</a>
+      <a href="/pages/spread/spread.html">我要推广</a>
+      <a href="javascript:;" class='registerHandler' handler='upgradeVip' id="tab_nav_special">升级会员</a>
+      <a href="/index.html">返回首页</a>
+    </nav>
+    <div id="agent_header">成为服务商</div>
+    <div id="be_agent">
+      <form id="be_agent_form">
+        <div class="form_group">
+          <label for="namne_be_agent">姓名:</label>
+          <input type="text" name="name" id="namne_be_agent" value="" dir="rtl" readonly placeholder="姓名">
+        </div>
+        <div class="form_group">
+          <label for="phone_be_agent">手机号:</label>
+          <input type="text" name="phone" id="phone_be_agent" value="" dir="rtl" placeholder="请输入手机">
+        </div>
+        <div class="form_group">
+          <label for="location_be_agent">所在地:</label>
+          <input type="text" name="location" id="location_be_agent" value="" dir="rtl" placeholder="请选择地址">
+        </div>
+        <div class="form_group">
+          <label for="phone">代理身份:</label>
+          <input type="text" name="agentId" id="agentId" value="" dir="rtl" placeholder="请选择代理身份">
+        </div>
+      </form>
+      <button type="button" name="button" id="be_agent_button" onclick="submitBeAgent()">提交审核</button>
+    </div>
+
+
+
+
+    <div id="is_agent">
+      <div>
+        <div class="form_group">
+          <label>姓名:</label>
+          <input type="text" id="name" value="" dir="rtl" readonly>
+        </div>
+        <div class="form_group">
+          <label>手机号:</label>
+          <input type="text" id="phone" value="" dir="rtl" readonly>
+        </div>
+        <div class="form_group">
+          <label>所在地方:</label>
+          <input type="text" id="location" value="" dir="rtl" readonly>
+        </div>
+        <div class="form_group">
+          <label>赠送vip名额:</label>
+          <input type="text" id="vip_send" value="" dir="rtl" readonly>
+        </div>
+        <div class="form_group">
+          <label>已用vip名额:</label>
+          <input type="text" id="vip_use" value="" dir="rtl" readonly>
+        </div>
+        <div class="form_group">
+          <label>剩余vip名额:</label>
+          <input type="text" id="vip_left" value="" dir="rtl" readonly>
+        </div>
+        <div class="form_group">
+          <label>赠送svip名额:</label>
+          <input type="text" id="svip_send" value="" dir="rtl" readonly>
+        </div>
+        <div class="form_group">
+          <label>已用svip名额:</label>
+          <input type="text" id="svip_use" value="" dir="rtl" readonly>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- <script src="/pages/agent/js/jquery.min.js"></script> -->
+  <script src="http://www.17sucai.com/preview/869565/2017-11-08/CityPicker/example/js/framework7.min.js"></script>
+  <script src="/pages/agent/js/regionsObject2.js"></script>
+  <script type="text/javascript" src='/js/global.js'></script>
+  <script type="text/javascript" src='/pages/agent/js/agent.js'></script>
+  <!-- <script src="/pages/agent/js/cityPicker.js"></script> -->
+</html>

@@ -1,0 +1,140 @@
+
+html,body {
+  background: #f0f3f5;
+  min-height: 100%;
+}
+#user_info {
+  padding: .33rem;
+  position: relative;
+  background: white;
+}
+#user_info .user_img {
+  width: 1.77rem;
+  height: 1.77rem;
+  display: inline-block;
+  background: red;
+  vertical-align: middle;
+}
+#user_info .user_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#user_info .user_name {
+  display: inline-block;
+  margin-left: .33rem;
+  vertical-align: middle;
+}
+#user_info .user_name h4 {
+  font-size: .43rem;
+  color: #858585;
+}
+#user_info .user_name p {
+  font-size: .37rem;
+  color: #d3a44d;
+  margin-top: .51rem;
+}
+#user_info .go_to_upgrade {
+  display: inline-block;
+  width: 2.12rem;
+  height: .96rem;
+  border-radius: .48rem;
+  line-height: .96rem;
+  text-align: center;
+  font-size: .37rem;
+  color: white;
+  background: #ff7203;
+  position: absolute;
+  right: .39rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#tuiguang_block {
+  margin-top: .13rem;
+  font-size: 0;
+  background: white;
+}
+#tuiguang_block_nav {
+  border-bottom: 1px solid #f2f2f2;
+}
+.tuiguang_block_nav_item {
+  display: inline-block;
+  height: 1.29rem;
+  font-size: .37rem;
+  width: 3.33rem;
+  line-height: 1.29rem;
+  text-align: center;
+  position: relative;
+}
+.tuiguang_block_nav_item.active::after {
+  content: '';
+  display: block;
+  width: 2.37rem;
+  height: 2px;
+  background: #ff7006;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.tuiguang_block_list_item {
+  padding: .4rem .4rem;
+  position: relative;
+  border-bottom: 1px solid #f2f2f2;
+}
+.tuiguang_block_list_item .tuiguang_item_img {
+  width: 2.76rem;
+  height: 1.77rem;
+  display: inline-block;
+  background: yellow;
+  vertical-align: middle;
+}
+.tuiguang_block_list_item .tuiguang_item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tuiguang_block_list_item .tuiguang_item_info {
+  width: 4.39rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: .31rem;
+}
+.tuiguang_block_list_item .tuiguang_item_but {
+  display: inline-block;
+  width: 1.55rem;
+  height: .91rem;
+  line-height: .91rem;
+  border-radius: .77rem;
+  text-align: center;
+  border: 1px solid #d55308;
+  color: #d55308;
+  font-size: .37rem;
+  position: absolute;
+  right: .4rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.tuiguang_item_info h4 {
+  font-size: .43rem;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+.tuiguang_item_info .price {
+  font-size: .32rem;
+  color: #d55308;
+  margin-top: .17rem;
+}
+.tuiguang_item_info .yongjin {
+  font-size: .35rem;
+  color: #909090;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin-top: .17rem;
+}

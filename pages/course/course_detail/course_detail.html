@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- 各浏览器配置 -->
+    <meta content="telephone=no,email=no" name="format-detection">
+
+    <!-- safari -->
+    <!-- 去掉地址栏和toolbar -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- uc -->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="nightmode" content="disable">
+
+    <!-- QQ -->
+    <meta name="x5-orientation" content="portrait">
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/pages/course/course_detail/css/course_detail.css">
+
+
+    <!-- 移动端适配js -->
+    <script src="/js/flexible.js"></script>
+    <!-- 微信sdk -->
+    <script type="text/javascript" src="/js/jweixin-1.2.0.js"></script>
+    <!-- zepto 轻量的jq-->
+    <script type="text/javascript" src="/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/js/zepto.touch.js"></script>
+
+    <!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
+    <title>媒体详情</title>
+  </head>
+  <body>
+    <nav id="tab_nav">
+      <a href="javascript:;" class='registerHandler' handler='toBack'><</a>
+      <a href="javascript:;" class='registerHandler' handler='guanZhu'>关注</a>
+      <a href="/pages/spread/spread.html">我要推广</a>
+      <a href="javascript:;" class='registerHandler' handler='upgradeVip' id="tab_nav_special">升级会员</a>
+      <a href="/index.html">返回首页</a>
+    </nav>
+
+    <div id="media_info">
+      <h4 id="media_title"></h4>
+    </div>
+    <div id="media_block">
+      <video id="mainvideo"  src="http://www.w3school.com.cn/i/movie.ogg" controls="controls" width="100%"></video>
+    </div>
+
+    <!-- 底下购买栏 -->
+    <div id="buy_block">
+      <p id="price">¥<span id="price_num"></span></p>
+      <p id="discount">VIP专享5折</p>
+      <span class="buy_control registerHandler" handler="buyCourse">购买课程</span>
+      <span class="buy_control registerHandler" handler="inviteFriend">邀请好友</span>
+    </div>
+  </body>
+
+  <!-- <script src="/pages/agent/js/jquery.min.js"></script> -->
+
+  <script type="text/javascript" src='/js/global.js'></script>
+  <script type="text/javascript" src='/js/nav.js'></script>
+  <script type="text/javascript" src='/pages/course/course_detail/js/course_detail.js'></script>
+  <!-- <script src="/pages/agent/js/cityPicker.js"></script> -->
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- 各浏览器配置 -->
+    <meta content="telephone=no,email=no" name="format-detection">
+
+    <!-- safari -->
+    <!-- 去掉地址栏和toolbar -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- uc -->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="nightmode" content="disable">
+
+    <!-- QQ -->
+    <meta name="x5-orientation" content="portrait">
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/pages/earn_money/css/earn_money.css">
+
+
+    <!-- 移动端适配js -->
+    <script src="/js/flexible.js"></script>
+    <!-- 微信sdk -->
+    <script type="text/javascript" src="/js/jweixin-1.2.0.js"></script>
+    <!-- zepto 轻量的jq-->
+    <script type="text/javascript" src="/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/js/zepto.touch.js"></script>
+
+    <!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
+    <title>推广</title>
+  </head>
+  <body>
+    <nav id="tab_nav">
+      <a href="javascript:;" class='registerHandler' handler='toBack'><</a>
+      <a href="javascript:;" class='registerHandler' handler='guanZhu'>关注</a>
+      <a href="/pages/spread/spread.html">我要推广</a>
+      <a href="javascript:;" class='registerHandler' handler='upgradeVip' id="tab_nav_special">升级会员</a>
+      <a href="/index.html">返回首页</a>
+    </nav>
+
+    <div id="user_info">
+      <span class="user_img"><img src="" alt=""></span>
+      <div class="user_name"><h4>神秘人</h4><p>你还不是会员</p></div>
+      <span class="go_to_upgrade registerHandler" handler='toUpgrade'>去升级</span>
+    </div>
+    <div id="tuiguang_block">
+      <ul id='tuiguang_block_nav'>
+        <li class="tuiguang_block_nav_item registerHandler active" handler="changeTab">单品课程</li>
+        <li class="tuiguang_block_nav_item registerHandler" handler="changeTab">精品专栏</li>
+        <li class="tuiguang_block_nav_item registerHandler" handler="changeTab">近期活动</li>
+      </ul>
+      <ul id='tuiguang_block_list'>
+        <li class="tuiguang_block_list_item">
+          <div class="tuiguang_item_img"></div>
+          <div class="tuiguang_item_info">
+            <h4>趣味魔方课（三接入门阿莱克斯肌肤史蒂夫）</h4>
+            <p class='price'>¥ 0.00</p>
+            <p class='yongjin'>预计佣金：¥ 0</p>
+          </div>
+          <span class="tuiguang_item_but">推广</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+  <!-- <script src="/pages/agent/js/jquery.min.js"></script> -->
+
+  <script type="text/javascript" src='/js/global.js'></script>
+  <script type="text/javascript" src='/js/nav.js'></script>
+  <script type="text/javascript" src='/pages/earn_money/js/earn_money.js'></script>
+  <!-- <script src="/pages/agent/js/cityPicker.js"></script> -->
+</html>

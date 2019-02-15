@@ -1,0 +1,44 @@
+#media_info {
+  padding: .67rem .4rem;
+  font-size: .43rem;
+}
+#media_block {
+  padding: 0 .4rem;
+}
+#buy_block {
+  display: none;
+  padding: .17rem .4rem;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #f2f2f2;
+  font-size: .4rem;
+}
+#discount {
+  color: #909090;
+  font-size: .32rem;
+}
+.buy_control {
+  padding: .2rem .4rem;
+  font-size: .4rem;
+  border-radius: .13rem;
+  position: absolute;
+}
+.buy_control:nth-of-type(1) {
+  border: 1px solid #f2f2f2;
+  top: .23rem;
+  right: 2.9rem;
+}
+.buy_control:nth-of-type(2) {
+    border: 1px solid #ee6d0a;
+    color: white;
+    right: .2rem;
+    top: .23rem;
+    background: #ee6d0a;
+}
+#price {
+  color: #ee6d0a;
+}

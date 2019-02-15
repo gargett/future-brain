@@ -1,0 +1,103 @@
+#tab_nav {
+  width: 100%;
+  height: .8rem;
+  text-align: right;
+  font-size: 0;
+  background: black;
+  line-height: .8rem;
+  position: relative;
+}
+#tab_nav a {
+  display: inline-block;
+  width: 2.2rem;
+  border-right: 1px solid white;
+  font-size: .32rem;
+  color: white;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+#tab_nav a:nth-of-type(5) {
+  border: 0;
+}
+#tab_nav a:nth-of-type(1) {
+  text-align: left;
+  border: 0;
+  display: inline;
+  width: auto;
+  height: 100%;
+  padding: 0 .27rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#agent_header {
+  height: 1.43rem;
+  line-height: 1.43rem;
+  text-align: center;
+  font-size: .4rem;
+  position: relative;
+  border-bottom: 1px solid #f2f2f2;
+}
+#agent_header::after {
+  content: '?';
+  width: .5rem;
+  height: .5rem;
+  line-height: .5rem;
+  display: inline-block;
+  position: absolute;
+  right: .27rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: .33rem;
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+}
+#is_agent, #be_agent {
+  display: none;
+}
+#be_agent .form_group,#is_agent .form_group {
+  height: 1.53rem;
+  padding: .07rem .27rem;
+  font-size: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+#be_agent .form_group label,#is_agent .form_group label {
+  display: inline-block;
+  width: 2rem;
+  height: 1.53rem;
+  line-height: 1.53rem;
+  font-size: .41rem;
+  vertical-align: top;
+}
+#is_agent .form_group label {
+  width: 2.5rem;
+}
+#be_agent .form_group input, #is_agent .form_group input {
+  width: 7rem;
+  height: 1.33rem;
+  line-height: 1.33rem;
+  font-size: .37rem;
+  vertical-align: top;
+  color: #909090;
+}
+#is_agent .form_group input {
+  width: 6.5rem;
+}
+#be_agent_button {
+  display: block;
+  width: 9.23rem;
+  height: 1.39rem;
+  line-height: 1.39rem;
+  text-align: center;
+  font-size: .43rem;
+  color: white;
+  background:#ff7203;
+  margin: auto;
+  margin-top: .4rem;
+  border-radius: .2rem;
+  font-weight: normal;
+}

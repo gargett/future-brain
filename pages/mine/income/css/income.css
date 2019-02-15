@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: #eef1f3;
+}
+#account_left {
+  width: 100%;
+  box-sizing: border-box;
+  height: 3.51rem;
+  background: #ff7203;
+  padding: 0 .4rem;
+  color: white;
+  padding-top: .89rem;
+}
+#account_left p:nth-last-of-type(1) {
+  font-size: .4rem;
+}
+#account_left p:nth-last-of-type(2) {
+  font-size: .43rem;
+}
+#acount_income {
+  font-size: 0;
+  text-align: center;
+  background: white;
+}
+#account_left_num {
+  margin-top: .41rem;
+  font-size: .67rem !important;
+}
+.acount_income_item {
+  font-size: .4rem;
+  display: inline-block;
+  width:3.25rem;
+  border-right: 1px solid #d8d8d8;
+  margin: .37rem 0;
+  text-align: center;
+  color: #848484;
+}
+.acount_income_item p:nth-of-type(2) {
+  margin-top: .45rem;
+  margin-bottom: .26rem;
+  font-size: .45rem;
+}
+.acount_income_item:nth-of-type(3) {
+  border-right: 0;
+}
+#account_income {
+  margin-top: .13rem;
+}
+.account_income_item {
+  padding:.4rem;
+  background: white;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: .4rem;
+}

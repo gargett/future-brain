@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+}
+body {
+  background: #eef3f4;
+  min-height: 100%;
+}
+
+#search_block {
+  padding: .4rem;
+  background: rgba(255,255,255,0.5);
+  position: relative;
+}
+#search_block form {
+  display: inline-block;
+  height: .63rem;
+  width: 7.33rem;
+  margin-left: .27rem;
+}
+#search_block form input {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: .37rem;
+  background: transparent
+}
+#search_block form, #search_block span {
+  vertical-align: middle;
+}
+#search_icon {
+  display: inline-block;
+  width: .53rem;
+  height: .53rem;
+  background: url(/image/search.png) no-repeat center;
+  background-size: cover;
+}
+#search_button {
+  font-size: .4rem;
+  color: #909090;
+  float: right;
+  display: inline-block;
+  font-size: .37rem;
+}
+#courses_list {
+  margin-top: .27rem;
+  background: white;
+}
+.courses_list_item {
+  padding: .4rem;
+  font-size: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #f2f2f2;
+}
+.courses_list_item_img {
+  width: 2.76rem;
+  height: 1.77rem;
+  background: yellow;
+  float: left;
+}
+.courses_list_item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.courses_list_item_info {
+  padding-left: 3.2rem;
+}
+.courses_list_item_info h4 {
+  font-size: .4rem;
+}
+.courses_list_item_info p {
+  color: #ee6d0a;
+  font-size: .35rem;
+  margin-top: .27rem;
+}
+#courses_list a {
+  color: black;
+}
+#load_more {
+  padding: .2rem;
+  text-align: center;
+}

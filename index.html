@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- 各浏览器配置 -->
+    <meta content="telephone=no,email=no" name="format-detection">
+
+    <!-- safari -->
+    <!-- 去掉地址栏和toolbar -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- uc -->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="nightmode" content="disable">
+
+    <!-- QQ -->
+    <meta name="x5-orientation" content="portrait">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/common.css">
+
+    <!-- 移动端适配js -->
+    <script src="/js/flexible.js"></script>
+    <!-- 微信sdk -->
+    <script type="text/javascript" src="/js/jweixin-1.2.0.js"></script>
+    <!-- zepto 轻量的jq-->
+    <script type="text/javascript" src="/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/js/zepto.touch.js"></script>
+    <!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
+    <title>未来头脑</title>
+  </head>
+  <body>
+    <nav id="tab_nav">
+      <a href="/index.html#index" class='registerHandler' handler='changeTab' pageto='index'>首页</a>
+      <a href="/index.html#mine" class='registerHandler' handler='changeTab' pageto='mine'>我的</a>
+    </nav>
+
+    <!-- 首页tab -->
+    <div id='indexTab' class='tab'>
+      <div id="banner"></div>
+      <ul id="tags">
+        <a href="/pages/agent/agent.html"><li class="tags_item" id="dailishang">代理商</li></a>
+        <a href="/pages/earn_money/earn_money.html"><li class="tags_item" id="tuiguang">推广赚钱</li></a>
+      </ul>
+      <div id="courses">
+        <div id="courses_header">专栏<a href="/pages/course/course_list/course_list.html"><span>查看更多></span></a></div>
+        <ul id="courses_list">
+
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- 我的tab -->
+    <div id='mineTab' class='tab'>
+      <div id="blueback"></div>
+      <div id="content_block">
+        <div id="mine_user_info">
+          <div class="mine_user_info_img"><img src="" alt=""></div>
+          <div class="mine_user_info_user">神秘人</div>
+          <div class="mine_user_info_userid"><span class="user_type">普通会员</span>ID:<span class="user_id">mydsd1234</span></div>
+        </div>
+        <div class="mine_my_project">
+          <div id="mine_my_project_header">我的项目</div>
+          <div id="mine_my_project_content">
+            <a href="/pages/mine/order/order.html"><div class="mine_nav_item" id='order_link'>
+              我的订单
+            </div></a>
+            <a href="/pages/mine/watch_record/watch_record.html"><div class="mine_nav_item" id='watch_record_link'>
+              观看记录
+            </div></a>
+            <a href="/pages/agent/agent.html"><div class="mine_nav_item" id='agent_link'>
+              服务商
+            </div></a>
+          </div>
+        </div>
+        <div class="mine_my_project">
+          <div id="mine_my_project_header">我的收入<a href="/pages/mine/income/income.html"><span>查看更多></span></a></div>
+          <div id="mine_my_project_content">
+            <div class="mine_income">
+              <div id='today_income'>0.00</div>
+              <div class="mine_income_wenzi">今日收入</div>
+            </div>
+            <div class="mine_income">
+              <div id='total_income'>0.00</div>
+              <div class="mine_income_wenzi">总收入</div>
+            </div>
+            <div class="mine_income">
+              <div id='week_income'>0.00</div>
+              <div class="mine_income_wenzi">本周收入</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript" src="/js/index.js"></script>
+  <script type="text/javascript" src="/js/index_course.js"></script>
+  <script type="text/javascript" src="/js/index_mine.js"></script>
+  <script type="text/javascript">
+    $('[pageto=index]').trigger('tap')
+  </script>
+</html>

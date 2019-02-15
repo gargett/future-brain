@@ -1,0 +1,125 @@
+body {
+  background: #eeeeee;
+}
+#user_info {
+  padding: .27rem .4rem;
+  position: relative;
+  background: white;
+}
+#user_info .user_img {
+  width: 1.33rem;
+  height: 1.33rem;
+  display: inline-block;
+  background: red;
+  vertical-align: middle;
+}
+#user_info .user_name {
+  display: inline-block;
+  margin-left: .13rem;
+  vertical-align: middle;
+}
+#user_info .user_name h4 {
+  font-size: .43rem;
+  color: #999999;
+}
+#user_info .user_name p {
+  font-size: .35rem;
+  color: yellow;
+  margin-top: .13rem;
+}
+#user_info .go_to_upgrade {
+  display: inline-block;
+  width: 2.1rem;
+  height: .8rem;
+  border-radius: .4rem;
+  line-height: .8rem;
+  text-align: center;
+  font-size: .37rem;
+  color: white;
+  background: orange;
+  position: absolute;
+  right: .27rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#tuiguang_block {
+  margin-top: .13rem;
+  font-size: 0;
+  background: white;
+}
+#tuiguang_block_nav {
+  border-bottom: 1px solid #ededed;
+}
+.tuiguang_block_nav_item {
+  display: inline-block;
+  height: 1.2rem;
+  font-size: .37rem;
+  width: 3.33rem;
+  line-height: 1.2rem;
+  text-align: center;
+  position: relative;
+}
+.tuiguang_block_nav_item.active::after {
+  content: '';
+  display: block;
+  width: 2.37rem;
+  height: 2px;
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.tuiguang_block_list_item {
+  padding: .27rem .4rem;
+  position: relative;
+}
+.tuiguang_block_list_item .tuiguang_item_img {
+  width: 2rem;
+  height: 1.6rem;
+  display: inline-block;
+  background: yellow;
+  vertical-align: middle;
+}
+.tuiguang_block_list_item .tuiguang_item_info {
+  width: 2.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: .13rem;
+}
+.tuiguang_block_list_item .tuiguang_item_but {
+  display: inline-block;
+  width: 1.2rem;
+  height: .8rem;
+  line-height: .8rem;
+  border-radius: .4rem;
+  text-align: center;
+  border: 1px solid orange;
+  color: orange;
+  font-size: .37rem;
+  position: absolute;
+  right: .4rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.tuiguang_item_info h4 {
+  font-size: .4rem;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+.tuiguang_item_info .price {
+  font-size: .32rem;
+  color: orange;
+}
+.tuiguang_item_info .yongjin {
+  font-size: .35rem;
+  color: #999999;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}

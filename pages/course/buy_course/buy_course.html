@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- 各浏览器配置 -->
+    <meta content="telephone=no,email=no" name="format-detection">
+
+    <!-- safari -->
+    <!-- 去掉地址栏和toolbar -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- uc -->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="nightmode" content="disable">
+
+    <!-- QQ -->
+    <meta name="x5-orientation" content="portrait">
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/pages/course/buy_course/css/buy_course.css">
+
+
+    <!-- 移动端适配js -->
+    <script src="/js/flexible.js"></script>
+    <!-- 微信sdk -->
+    <script type="text/javascript" src="/js/jweixin-1.2.0.js"></script>
+    <!-- zepto 轻量的jq-->
+    <script type="text/javascript" src="/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/js/zepto.touch.js"></script>
+
+    <!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
+    <title>购买</title>
+  </head>
+  <body>
+    <nav id="tab_nav">
+      <a href="javascript:;" class='registerHandler' handler='toBack'><</a>
+      <a href="javascript:;" class='registerHandler' handler='guanZhu'>关注</a>
+      <a href="/pages/spread/spread.html">我要推广</a>
+      <a href="javascript:;" class='registerHandler' handler='upgradeVip' id="tab_nav_special">升级会员</a>
+      <a href="/index.html">返回首页</a>
+    </nav>
+    <div id="course_info">
+      <div id="course_info_img">
+        <img src="" alt="">
+      </div>
+      <div id="course_info_detail">
+        <h4>的苏里科夫就是地方</h4>
+        <p id="price">¥<span class="course_price">67.00</span></p>
+        <p id="buy_zhuanlan">购买专栏</p>
+      </div>
+    </div>
+    <div id="buy_platform">
+      <div id="buy_platform_header">支付平台</div>
+      <ul>
+        <li class="buy_platform_item registerHandler active" handler='selectPayType'><span>微信支付</span></li>
+        <li class="buy_platform_item registerHandler" handler='selectPayType'><span>账户余额¥</span><span id='account_left'></span></li>
+      </ul>
+    </div>
+    <div id="buy_button" class='registerHandler' handler='buy'>确认支付 ¥<span class="course_price"></span></div>
+
+  </body>
+
+  <!-- <script src="/pages/agent/js/jquery.min.js"></script> -->
+
+  <script type="text/javascript" src='/js/global.js'></script>
+  <script type="text/javascript" src='/js/nav.js'></script>
+  <script type="text/javascript" src='/pages/course/buy_course/js/buy_course.js'></script>
+  <!-- <script src="/pages/agent/js/cityPicker.js"></script> -->
+</html>
